@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.project</groupId>
+    <artifactId>minecraftclone</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <!-- Define the LWJGL version -->
+    <lwjgl.version>3.3.3</lwjgl.version>
+    <lwjgl.natives>natives-macos</lwjgl.natives> <!-- o "natives-windows" -->
+    </properties>
+
+    <dependencies>
+        <!-- LWJGL Core library -->
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl</artifactId>
+            <version>${lwjgl.version}</version>
+        </dependency>
+
+        <!-- LWJGL GLFW for window handling -->
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-glfw</artifactId>
+            <version>${lwjgl.version}</version>
+        </dependency>
+
+        <!-- LWJGL OpenGL bindings -->
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-opengl</artifactId>
+            <version>${lwjgl.version}</version>
+        </dependency>
+
+<!-- JOML for Matrix4f -->
+    <dependency>
+        <groupId>org.joml</groupId>
+        <artifactId>joml</artifactId>
+        <version>1.10.0</version> <!-- You can change the version if needed -->
+    </dependency>
+    
+        <!-- LWJGL Natives (native libraries) for macOS -->
+        
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl</artifactId>
+            <version>${lwjgl.version}</version>
+            <classifier>natives-macos-arm64</classifier> <!-- Usa natives-macos-arm64 per Apple Silicon -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-glfw</artifactId>
+            <version>${lwjgl.version}</version>
+            <classifier>natives-macos-arm64</classifier> <!-- Usa natives-macos-arm64 per Apple Silicon -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-opengl</artifactId>
+            <version>${lwjgl.version}</version>
+            <classifier>natives-macos-arm64</classifier> <!-- Usa natives-macos-arm64 per Apple Silicon -->
+        </dependency>
+
+        <!-- LWJGL STB library (for STBEasyFont) -->
+<!-- LWJGL STB for font rendering -->
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-stb</artifactId>
+    <version>${lwjgl.version}</version>
+</dependency>
+
+<!-- Native dependency for STB (macOS ARM) -->
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-stb</artifactId>
+    <version>${lwjgl.version}</version>
+    <classifier>natives-macos-arm64</classifier>
+</dependency>
+    </dependencies>
+</project>
