@@ -50,5 +50,3 @@ Nel formato compresso GZIP. I dati includono dimensioni e tipo di blocco per ogn
 ![](src/main/resources/Screenshot%202025-07-15%20alle%2010.45.27.png)
 
 ![](src/main/resources/Screenshot%202025-07-15%20alle%2010.50.46.png)
-
-> 🔍 Consiglio: mantieni le immagini intorno a **1920 × 1080** per chi vuole vederle a schermo intero, ma non superare 500 KB ciascuna per non appesantire il repo. Puoi anche spostarle in `docs/images/` se GitHub Pages servirà per la documentazione.
